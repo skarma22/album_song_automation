@@ -6,6 +6,10 @@
     }],
     "routes": [
         {
+          "src" = "/static/(.*)",
+          "dest" = "/static/$1" 
+        },
+        {
             "src": "/(.*)",
             "dest": "genius_album_song_automation/wsgi.py"
         }
